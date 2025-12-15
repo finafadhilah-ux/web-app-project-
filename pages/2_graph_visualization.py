@@ -9,7 +9,7 @@ st.set_page_config(layout="wide")
 def display_graph_properties(G):
     """Displays graph properties: Degree and Adjacency Matrix."""
     
-    st.subheader("📊 Graph Properties")
+    st.subheader("Graph Properties")
 
     # 1. Degree
     st.markdown("#### Degree of Each Node")
@@ -65,7 +65,7 @@ def draw_graph(G):
 
 # --- MAIN STREAMLIT APP ---
 
-st.header("✨ Graph Visualization (Discrete Mathematics)")
+st.header("Graph Visualization")
 st.markdown("This application demonstrates simple graph visualization and its basic properties.")
 st.markdown("---")
 
@@ -112,4 +112,5 @@ if st.button("Generate Graph"):
             st.error(f"An error occurred while creating the graph: {e}")
 
 st.markdown("---")
+
 st.caption("Using NetworkX and Streamlit for Graph Theory demonstration.")
